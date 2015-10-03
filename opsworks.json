@@ -1,0 +1,65 @@
+{
+  "deploy": {
+    "teachconnection": {
+      "database": {
+        "adapter":"postgresql",
+        "type":"postrgesql"
+      },
+      "symlink_before_migrate":{
+        ".env" : ".env"
+      },
+      "app_env": {
+        "AWS_ACCESS_KEY_ID": "AKIAJIZHOQBIDOS6PHUQ",
+        "AWS_SECRET_ACCESS_KEY": "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",
+        "AWS_REGION": "ap-southeast-2",
+        "AWS_BUCKET": "tc-uploads",
+        "aws_access_key_id": "AKIAJIZHOQBIDOS6PHUQ",
+        "aws_secret_access_key": "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",
+        "aws_region": "ap-southeast-2",
+        "aws_bucket": "tc-uploads"
+      }
+    },
+    "TeachConnection": {
+      "rails_env": "production",
+      "database": {
+        "adapter": "postgresql",
+        "encoding": "unicode",
+        "host": "teachdb.ceag8qxmpwag.ap-southeast-2.rds.amazonaws.com",
+        "port": "5432",
+        "database": "teachdb",
+        "pool": "5",
+        "username": "teachdbuser",
+        "password": "iamthebest"
+      }
+    }
+  }
+}
+
+
+
+{
+  "deploy": {
+    "railsapp": {
+      "database": {
+        "adapter":"postgresql",
+        "type":"postrgesql"
+      },
+      "symlink_before_migrate":{
+        ".env" : ".env"
+      }
+    },
+    "RailsApp": {
+      "rails_env": "production",
+      "database": {
+        "adapter": "postgresql",
+        "encoding": "unicode",
+        "host": "railsdbinstance.ceag8qxmpwag.ap-southeast-2.rds.amazonaws.com",
+        "port": "5432",
+        "database": "railsdb",
+        "pool": "5",
+        "username": "teachdbuser",
+        "password": "iamthebest"
+      }
+    }
+  }
+}
